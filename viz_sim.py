@@ -3,8 +3,8 @@ import streamlit as st
 import plotly.express as px
 import plotly.graph_objects as go
 import pandas as pd
-from aggregation.sim_agg import sim_agg
-from Visualizations.viz_graph import viz_graph
+from sim_agg import sim_agg
+from viz_graph import viz_graph
 
 def viz_sim(visualization_variables):
     fig_daily_overflow = go.Figure()

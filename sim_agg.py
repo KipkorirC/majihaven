@@ -1,8 +1,8 @@
 import streamlit as st
 import pandas as pd
-from classes.roof_data_simulation import RoofDataSimulation as roof_data
+from roof_data_simulation import RoofDataSimulation as roof_data
 from dateutil import relativedelta
-from aggregation.graph_agg import graph_agg
+from graph_agg import graph_agg
 
 def sim_agg(RAIN_DATA,RAINFALL_COEFFICIENT,CONSUMPTION_RATE_IN_LITRES,POPULATION_PER_HOUSEHOLD,EFFECTIVE_ROOF_AREA_M2,TANK_CAPACITY_LITRES):
             # Create input widgets for Rainfall Coefficient, Consumption Rate, Effective Roof Area, and Tank Capacity

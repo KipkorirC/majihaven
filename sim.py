@@ -1,8 +1,8 @@
-from functions.functions import load_and_process_data
-from aggregation.graph_agg import graph_agg
-from aggregation.sim_agg import sim_agg
-from Visualizations.viz_sim import viz_sim
-from Visualizations.viz_graph import viz_graph
+from functions import load_and_process_data
+from graph_agg import graph_agg
+from sim_agg import sim_agg
+from viz_sim import viz_sim
+from viz_graph import viz_graph
 #from optimizer.optimal import find_optimal_tank_capacity
 
 
