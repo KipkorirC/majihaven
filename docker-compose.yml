@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: cmt
+      POSTGRES_PASSWORD: kali
+      POSTGRES_DB: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+
+  streamlit:
+    build: ./
+    ports:
+      - "8501:8501"
+    depends_on:
+      - db
+    environment:
+      DATABASE_URL: postgres://cmt:kali@db:5432/postgres
+
+volumes:
+  pg_data:
